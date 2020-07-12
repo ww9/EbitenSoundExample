@@ -6,3 +6,4 @@ Currently I'm trying to understand why loading some WAVs gives this error and ho
 
 `wav: bits per sample must be 8 or 16 but was 24`
 
+![Screenshot](/screenshot.png)
