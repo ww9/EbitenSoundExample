@@ -2,7 +2,7 @@
 
 Small repository to teach myself to play sounds in Ebiten game engine (https://ebiten.org/).
 
-## wav: bits per sample must be 8 or 16 but was 24
+## Error "wav: bits per sample must be 8 or 16 but was 24"
 
 If you get this error while loading a WAV file, you can convert the wav file to 16 bits using ffmpeg commandline utility like this:
 
