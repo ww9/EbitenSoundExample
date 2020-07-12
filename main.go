@@ -60,7 +60,7 @@ func (g *Game) Update(*ebiten.Image) error {
 		if x <= 200 && !g.Sound1.IsPlaying() {
 			g.Sound1.Rewind()
 			g.Sound1.Play()
-		} else if !g.Sound2.IsPlaying() {
+		} else if x > 200 && !g.Sound2.IsPlaying() {
 			g.Sound2.Rewind()
 			g.Sound2.Play()
 		}
