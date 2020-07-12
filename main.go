@@ -26,7 +26,7 @@ func main() {
 	ebiten.SetWindowTitle("Ebiten Sound Player Example")
 	game := &Game{}
 	game.Sound1 = NewWavPlayer(Bsound_wav)
-	game.Sound2 = NewWavPlayer(Bsound2_wav) // <--- errors wit "bits per sample must be 8 or 16 but was 24"
+	game.Sound2 = NewWavPlayer(Bsound2_wav) // <--- errors with "bits per sample must be 8 or 16 but was 24". Change Bsound2_wav to Bsound_wav to run the program
 	if err := ebiten.RunGame(game); err != nil {
 		log.Fatal(err)
 	}
